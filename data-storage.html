@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data-storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      body {
+        background-image: url(./images/bg-desktop.png);
+      }
+      @media (max-width: 768px) {
+        body {
+          background-image: url(./images/bg-mobile.png);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#0C122C] bg-no-repeat bg-bottom bg-cover md:bg-auto h-screen flex flex-col md:flex-row justify-center items-center gap-7"
+  >
+    <!-- lc -->
+    <div
+      class="lc w-[350px] h-[200px] bg-[#1E2C6A] rounded-xl rounded-tr-[90px] p-[40px]"
+    >
+      <img src="./images/logo.svg" alt="" />
+      <div class="flex justify-between mt-[30px] w-[200px]">
+        <img
+          src="./images/icon-document.svg"
+          alt=""
+          class="px-[16px] py-[12px] bg-[#0C122D] rounded-lg"
+        />
+        <img
+          src="./images/icon-folder.svg"
+          alt=""
+          class="px-[16px] py-[12px] bg-[#0C122D] rounded-lg"
+        />
+        <img
+          src="./images/icon-upload.svg"
+          alt=""
+          class="px-[16px] py-[12px] bg-[#0C122D] rounded-lg"
+        />
+      </div>
+    </div>
+    <!-- rc -->
+    <div class="rc w-[350px] md:w-[550px] md:h-[200px] items-end flex">
+      <div
+        class="rc w-[350px] md:w-[550px] h-[150px] relative bg-[#1E2C6A] rounded-lg p-[40px]"
+      >
+        <div
+          class="notif md:w-[180px] h-[70px] absolute top-[130px] right-[87px] md:right-[35px] px-[30px] md:top-[-46px] bg-white rounded-xl text-center pt-[10px]"
+        >
+          <p class="text-xs text-[#B6C2A7] font-bold">
+            <span class="text-black text-3xl font-extrabold relative top-[6px]"
+              >1</span
+            ><span class="text-black text-3xl font-extrabold relative top-[4px]"
+              >8</span
+            ><span class="text-black text-3xl font-extrabold relative top-[7px]"
+              >5</span
+            >
+            &nbsp; GB LEFT
+          </p>
+          <div
+            class="tirangle hidden md:block border-b-[20px] border-t-[20px] border-r-[20px] border-t-transparent border-b-transparent border-r-white absolute right-0 bottom-[-20px]"
+          ></div>
+        </div>
+        <p class="text-sm text-[#B6C2F7]">
+          You've used <span class="text-white"> 8 </span>
+          <span class="text-white">1</span> <span class="text-white">5</span>
+          <span class="text-white"> GB</span> of your storage
+        </p>
+        <div
+          class="spacerange md:w-[480px] h-[20px] rounded-full bg-[#141E46] mt-[15px] mb-[5px] p-[2px]"
+        >
+          <div
+            class="md:w-[315px] h-[16px] rounded-full bg-gradient-to-r from-[#FF9F98] to-[#FA4D90] flex justify-end items-center px-[2px]"
+          >
+            <span class="w-[14px] h-[14px] rounded-full bg-white"></span>
+          </div>
+        </div>
+        <div
+          class="txt md:w-[480px] flex justify-between text-xs text-[#B6C2F7]"
+        >
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
